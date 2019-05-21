@@ -147,36 +147,16 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼<br /><h1>Lua 程式碼</h1>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- 導入 js 模組
-js = require("js")
--- 取得 window
-window = js.global
--- 猜小於或等於 n 的整數
-big = 100
--- 計算猜測次數, 配合 while 至少會猜一次
-num = 1
--- 利用 window:prompt 方法回應取得使用者所猜的整數
-guess = window:prompt("請猜一個介於 1 到 "..big.." 的整數")
--- 利用數學模組的 random 函數以亂數產生答案
-answer = math.random(big)
-output = ""
--- 若沒猜對, 一直猜到對為止
-while answer ~= tonumber(guess) do
-    if answer &gt; tonumber(guess) then
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too small"
-        print(output)
-    else
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too big"
-        print(output)
-    end 
-    guess = window:prompt(output..", 請猜一個介於 1 到 "..big.." 的整數")
-    num = num + 1
-end
-print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
-    </pre>
-<p></p>
-<br />C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼</div>
+    <div id="tipue_search_content">git 基本操作練習 << <a href='git 基本操作練習.html'>Previous</a> <a href='更新倉儲.html'>Next</a> >> 更新倉儲<br /><h1>CMSimfly中插入影片</h1>
+<p><span> 1.以 Leo Editor</span><span> 開啟 config/reveal.leo</span></p>
+<p><span><img alt="" height="180" src="./../images/011.png" width="229"/></span></p>
+<p><span>2.到你要貼上的影片網站 , <span>點選下方分享</span></span></p>
+<p><span><span>3.再點選嵌入 , <span>複製右方文字</span></span></span></p>
+<p><span><span>4.至Leo Editor貼上</span></span></p>
+<p><span><span>5.儲存</span></span></p>
+<p>6.完成</p>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/s5MRoE-_v1c" width="500"></iframe></p>
+<br />git 基本操作練習 << <a href='git 基本操作練習.html'>Previous</a> <a href='更新倉儲.html'>Next</a> >> 更新倉儲</div>
         
     <!-- footer -->
       <div class="container">

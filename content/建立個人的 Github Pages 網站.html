@@ -147,36 +147,19 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼<br /><h1>Lua 程式碼</h1>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- 導入 js 模組
-js = require("js")
--- 取得 window
-window = js.global
--- 猜小於或等於 n 的整數
-big = 100
--- 計算猜測次數, 配合 while 至少會猜一次
-num = 1
--- 利用 window:prompt 方法回應取得使用者所猜的整數
-guess = window:prompt("請猜一個介於 1 到 "..big.." 的整數")
--- 利用數學模組的 random 函數以亂數產生答案
-answer = math.random(big)
-output = ""
--- 若沒猜對, 一直猜到對為止
-while answer ~= tonumber(guess) do
-    if answer &gt; tonumber(guess) then
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too small"
-        print(output)
-    else
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too big"
-        print(output)
-    end 
-    guess = window:prompt(output..", 請猜一個介於 1 到 "..big.." 的整數")
-    num = num + 1
-end
-print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
-    </pre>
-<p></p>
-<br />C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼</div>
+    <div id="tipue_search_content">個人操作練習 << <a href='個人操作練習.html'>Previous</a> <a href='git 基本操作練習.html'>Next</a> >> git 基本操作練習<br /><h1>建立個人的 Github Pages 網站</h1>
+<p><yt-formatted-string class="style-scope ytd-video-primary-info-renderer">操作如何利用 p37 中的 git 建立個人的 Github Pages 網站</yt-formatted-string></p>
+<ol>
+<li><span>進入github.io網站，創建個人帳號</span></li>
+<li><span>建立新的倉儲-40723102.github.io</span></li>
+<li><span><span><span>git clone https://github.com/mdecourse/2018fall</span></span></span></li>
+<li><span><span><span>git clone https://github.com/s40723120/s40723102.github.io</span></span></span></li>
+<li><span>從2018fall資料夾複製裡面的檔案，排除.git和README.me，貼到自己的資料夾(40723102)內</span></li>
+<li><span>git status(檢查狀態)-&gt;git add .(增加)-&gt;git commit -m "name"( 提交)-&gt;git push (推送至遠端)</span></li>
+<li>完成</li>
+</ol>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/rMKR70xsIIU" width="500"></iframe></p>
+<br />個人操作練習 << <a href='個人操作練習.html'>Previous</a> <a href='git 基本操作練習.html'>Next</a> >> git 基本操作練習</div>
         
     <!-- footer -->
       <div class="container">
