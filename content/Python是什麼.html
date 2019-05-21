@@ -147,35 +147,12 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼<br /><h1>Lua 程式碼</h1>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- 導入 js 模組
-js = require("js")
--- 取得 window
-window = js.global
--- 猜小於或等於 n 的整數
-big = 100
--- 計算猜測次數, 配合 while 至少會猜一次
-num = 1
--- 利用 window:prompt 方法回應取得使用者所猜的整數
-guess = window:prompt("請猜一個介於 1 到 "..big.." 的整數")
--- 利用數學模組的 random 函數以亂數產生答案
-answer = math.random(big)
-output = ""
--- 若沒猜對, 一直猜到對為止
-while answer ~= tonumber(guess) do
-    if answer &gt; tonumber(guess) then
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too small"
-        print(output)
-    else
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too big"
-        print(output)
-    end 
-    guess = window:prompt(output..", 請猜一個介於 1 到 "..big.." 的整數")
-    num = num + 1
-end
-print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
-    </pre>
-<p></p><br />C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼</div>
+    <div id="tipue_search_content">GIT指令 << <a href='GIT指令.html'>Previous</a> <a href='個人操作練習.html'>Next</a> >> 個人操作練習<br /><h1>Python是什麼</h1>
+<p>1.<span style="color: #ff0000;">容易撰寫</span>-Python 通常可以靠比較短的程式碼完成較多的功能，或者可寫得比較清楚。</p>
+<p>2.<span style="color: #ff0000;">功能強大</span>-Python絕大部分都是開放原始碼的，與主要作業系統的支援功能等等，含括的範圍非常地廣泛。</p>
+<p>3.<span style="color: #ff0000;">跨平台</span>-各種主要的作業系統都支援 Python。Python 程式常常不需要修改。所撰寫的 Python 程式透過標準的模組進行包裝後，用標準的方式即可安裝於各種平台。</p>
+<p>4.<span style="color: #ff0000;">容易擴充<span style="color: #000000;">-</span></span>Python 算是執行效率不錯的直譯式語言。Python本身被設計為可擴充的。因此，有很多人把Python作為一種「膠水語言」（glue language）使用。使用Python將其他語言編寫的程式進行整合和封裝。</p>
+<p><img caption="false" height="302" src="./../images/01.png" width="500"/></p><br />GIT指令 << <a href='GIT指令.html'>Previous</a> <a href='個人操作練習.html'>Next</a> >> 個人操作練習</div>
         
     <!-- footer -->
       <div class="container">

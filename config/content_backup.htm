@@ -1,6 +1,37 @@
 <h1>簡介</h1>
-<p>CMSimfly (<a href="https://github.com/chiamingyen/cmsimfly">https://github.com/chiamingyen/cmsimfly)</a> 是一套簡單的網際內容管理系統, 採用 Flask 網際框架, 以 Beautifulsoup 解讀分頁內容.</p>
-<p><img alt="" height="471" src="/images/gocycle4.png" width="587"/></p><h1>目錄結構</h1>
+<p>設計一甲-40723102林昱秀</p>
+<h1>GIT指令</h1>
+<p>&gt;C:/Y: <span> </span><strong> 切換至C/Y槽</strong></p>
+<p>cd <span> </span><strong>更換目錄</strong></p>
+<p><span>cls<span> </span><strong>清理</strong></span></p>
+<p><span>git clone</span><span> +網址 <strong> </strong></span><strong>從遠端倉儲複製到近端(並建立工作目錄)</strong></p>
+<p><span>git pull</span><span>  </span><strong>將遠端倉儲之最新版本更新回來</strong></p>
+<p><span>git status</span><span>  </span><strong>檢查狀態</strong></p>
+<p><span>git log </span><span> </span><strong>查看版本之歷史紀錄</strong></p>
+<p><span>git branch <span> </span><strong>檢視分支</strong></span></p>
+<p><span><span>git branch name</span></span><span>  </span><strong><span>建立分支</span></strong></p>
+<p><span>git checkout name</span><span>  </span><strong>切換分支</strong></p>
+<p><span>git checkout -b name</span><span>  </span><strong>建立分支並切換至最新分支</strong></p>
+<p><span>git checkout -d name</span><span>  </span><strong>刪除分支</strong></p>
+<p>config --global user.name "40723102 or xxx" <span> </span><strong> 設定使用者名稱</strong></p>
+<p><span>git config --global user.email "40723102@gm.</span><span>nfu.</span><span>edu.</span><span>tw"</span><span>   </span><strong>設定使用者信箱</strong></p>
+<p><span>git init</span><span>  </span><strong>把當前目錄變成git可管理之倉儲</strong></p>
+<p><span>git show</span><span>  </span><strong>查看該版本之相關資訊</strong></p>
+<p><span>git bebase</span><span>  </span><strong>把另一分支變更,當作目前使用分支之基礎</strong></p>
+<p><span>git remote add xxx</span><span> <span> </span><strong>註記在</strong></span><strong>遠端下</strong></p>
+<p><span>git checkout .   <strong>回到上一個提交(當從上一個提交到下一次操作發生致命資料丟失使用</strong>)</span></p>
+<p><span><span>git add .<span> </span><strong>拍快照</strong></span></span></p>
+<p><span>git commit -m "標題or描述" <span> </span><strong>把暫存區之檔案提交到倉儲</strong></span></p>
+<p><span>git push</span><span> </span><strong>把近端存儲庫中物件推到遠端倉儲</strong></p>
+<h1>Python是什麼</h1>
+<p>1.<span style="color: #ff0000;">容易撰寫</span>-Python 通常可以靠比較短的程式碼完成較多的功能，或者可寫得比較清楚。</p>
+<p>2.<span style="color: #ff0000;">功能強大</span>-Python絕大部分都是開放原始碼的，與主要作業系統的支援功能等等，含括的範圍非常地廣泛。</p>
+<p>3.<span style="color: #ff0000;">跨平台</span>-各種主要的作業系統都支援 Python。Python 程式常常不需要修改。所撰寫的 Python 程式透過標準的模組進行包裝後，用標準的方式即可安裝於各種平台。</p>
+<p>4.<span style="color: #ff0000;">容易擴充<span style="color: #000000;">-</span></span>Python 算是執行效率不錯的直譯式語言。Python本身被設計為可擴充的。因此，有很多人把Python作為一種「膠水語言」（glue language）使用。使用Python將其他語言編寫的程式進行整合和封裝。</p><h1>個人操作練習</h1>
+<p>從課堂中學習並練習所學</p><h2>更新倉儲</h2>
+<p>倉儲版本更新</p>
+<p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/7j5U9xiTAiE" width="500"></iframe></p><h2>學習解決倉儲合併衝突</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="360" src="//www.youtube.com/embed/os31rKiqWuo" width="500"></iframe></p><h1>目錄結構</h1>
 <p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 Beatifulsoup 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
 <p>content.htm 檔案可以透過動態系統中的 generate_pages 功能, 將超文件轉為位於 content 目錄中的個別頁面檔案.</p>
 <p>動態系統與靜態系統則共用 downloads, images, static 等目錄, 其中 downloads 目錄存放在動態系統上傳的文件檔, 而 images 目錄則存放動態系統所上傳的影像檔案, 包括 jpg, png 與 gif 等格式圖檔.</p>

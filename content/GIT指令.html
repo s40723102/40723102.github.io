@@ -147,35 +147,30 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼<br /><h1>Lua 程式碼</h1>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- 導入 js 模組
-js = require("js")
--- 取得 window
-window = js.global
--- 猜小於或等於 n 的整數
-big = 100
--- 計算猜測次數, 配合 while 至少會猜一次
-num = 1
--- 利用 window:prompt 方法回應取得使用者所猜的整數
-guess = window:prompt("請猜一個介於 1 到 "..big.." 的整數")
--- 利用數學模組的 random 函數以亂數產生答案
-answer = math.random(big)
-output = ""
--- 若沒猜對, 一直猜到對為止
-while answer ~= tonumber(guess) do
-    if answer &gt; tonumber(guess) then
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too small"
-        print(output)
-    else
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too big"
-        print(output)
-    end 
-    guess = window:prompt(output..", 請猜一個介於 1 到 "..big.." 的整數")
-    num = num + 1
-end
-print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
-    </pre>
-<p></p><br />C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼</div>
+    <div id="tipue_search_content">簡介 << <a href='簡介.html'>Previous</a> <a href='Python是什麼.html'>Next</a> >> Python是什麼<br /><h1>GIT指令</h1>
+<p>&gt;C:/Y: <span> </span><strong> 切換至C/Y槽</strong></p>
+<p>cd <span> </span><strong>更換目錄</strong></p>
+<p><span>cls<span> </span><strong>清理</strong></span></p>
+<p><span>git clone</span><span> +網址 <strong> </strong></span><strong>從遠端倉儲複製到近端(並建立工作目錄)</strong></p>
+<p><span>git pull</span><span>  </span><strong>將遠端倉儲之最新版本更新回來</strong></p>
+<p><span>git status</span><span>  </span><strong>檢查狀態</strong></p>
+<p><span>git log </span><span> </span><strong>查看版本之歷史紀錄</strong></p>
+<p><span>git branch <span> </span><strong>檢視分支</strong></span></p>
+<p><span><span>git branch name</span></span><span>  </span><strong><span>建立分支</span></strong></p>
+<p><span>git checkout name</span><span>  </span><strong>切換分支</strong></p>
+<p><span>git checkout -b name</span><span>  </span><strong>建立分支並切換至最新分支</strong></p>
+<p><span>git checkout -d name</span><span>  </span><strong>刪除分支</strong></p>
+<p>config --global user.name "40723102 or xxx" <span> </span><strong> 設定使用者名稱</strong></p>
+<p><span>git config --global user.email "40723102@gm.</span><span>nfu.</span><span>edu.</span><span>tw"</span><span>   </span><strong>設定使用者信箱</strong></p>
+<p><span>git init</span><span>  </span><strong>把當前目錄變成git可管理之倉儲</strong></p>
+<p><span>git show</span><span>  </span><strong>查看該版本之相關資訊</strong></p>
+<p><span>git bebase</span><span>  </span><strong>把另一分支變更,當作目前使用分支之基礎</strong></p>
+<p><span>git remote add xxx</span><span> <span> </span><strong>註記在</strong></span><strong>遠端下</strong></p>
+<p><span>git checkout .   <strong>回到上一個提交(當從上一個提交到下一次操作發生致命資料丟失使用</strong>)</span></p>
+<p><span><span>git add .<span> </span><strong>拍快照</strong></span></span></p>
+<p><span>git commit -m "標題or描述" <span> </span><strong>把暫存區之檔案提交到倉儲</strong></span></p>
+<p><span>git push</span><span> </span><strong>把近端存儲庫中物件推到遠端倉儲</strong></p>
+<br />簡介 << <a href='簡介.html'>Previous</a> <a href='Python是什麼.html'>Next</a> >> Python是什麼</div>
         
     <!-- footer -->
       <div class="container">
