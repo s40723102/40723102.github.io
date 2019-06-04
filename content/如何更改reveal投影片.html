@@ -147,80 +147,19 @@ init_mathjax();
           </div>
           
         </header>
-    <div id="tipue_search_content">VitualBox老師課程 << <a href='VitualBox老師課程.html'>Previous</a> <br /><h1>已知錯誤</h1>
-<p><strong>期中問題</strong></p>
-<ul>
-<li><span style="color: #ff0000;">全部頁面會因無法正確解讀而誤刪</span></li>
-</ul>
-<p>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
-<ul>
-<li>頁<span style="color: #ff0000;">面標題不支援特殊符號</span></li>
-</ul>
-<p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
-<ul>
-<li><span style="color: #ff0000;">Video 引用不支援內部引用</span></li>
-</ul>
-<p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
-<ul>
-<li><span style="color: #ff0000;">單機與網路差別 </span>  </li>
-</ul>
-<p>單機之資料庫只供本機使用，網路之資料庫為透過區域網路設定可供多人共用。</p>
-<ul>
-<li><span style="color: #ff0000;">為什麼協同反而無法取得正確近端</span></li>
-</ul>
-<p> 因為協同後，需要pull request才能真正取得倉儲之近端，在指令馬中打git pull，即可將近端</p>
-<p> 遠端統合， 便可把資料push上去。</p>
-<ul>
-<li><span style="color: #ff0000;">兩個人同時用近端並同時上傳檔案，但有合併衝突怎麼辦</span></li>
-</ul>
-<p> 先將.htm檔拖曳到SciTE文字編輯器，找出衝突點，並刪除頭(&lt;&lt;&lt;&lt;&lt;&lt;&lt;)尾(&gt;&gt;&gt;&gt;&gt;&gt;&gt;)與接 合處 (=======)後，儲存並重新進入近端，將之轉成Generapage，最後git add .  git commit 並git push。</p>
-<ul>
-<li><span style="color: #ff0000;">為什麼倉儲會突然找不到網頁，但在遠端還可以看到</span></li>
-</ul>
-<p>有可能是因為檔案中又包住另一個git clone 下來的資料，造成程式碼衝突，因而，使得變成404網頁。</p>
-<p> * 處理方式:建議不要將檔案連續包夾在同一個資料夾裡面。</p>
-<ul>
-<li><span style="color: #ff0000;">為什麼更改字型但是網頁爆掉</span></li>
-</ul>
-<p>由於前後自行更改大小不一，因而造成網頁爆掉，需要到SciTE去刪除設定大小的前後(head3)</p>
-<p>即可救回網頁。 P.S.建議不要隨便更改字型大小。</p>
-<ul>
-<li><span style="color: #ff0000;">網頁爆掉如何救回</span></li>
-</ul>
-<p>檢視問題點在哪行程式碼，將之移除，並重新檢視、送出，以下為指令:</p>
-<p>Git log(查看從最近到最遠得提交日誌)</p>
-<p>Git checkout 7碼(丟棄工作區文檔的修改)</p>
-<p>Git status(查看當前git倉儲狀態)</p>
-<p>Git diff (查看修改的文檔內容)</p>
-<p>Git status(查看當前git倉儲狀態)</p>
-<p>Git stash(將寫到一半的代碼從工作區拿走存起來)</p>
-<p>Git status(查看當前git倉儲狀態)</p>
-<p><strong>期末問題</strong></p>
-<ul>
-<li><span style="color: #ff0000;">新版與舊版倉儲產生倉儲</span></li>
-</ul>
-<p>將舊版倉儲一律改版成新版，在原先舊版資料檔中保存config目錄，之後將新版倉儲資料複製撇除git檔全部覆蓋後，重新進入近端推送變更資料後即可解決衝突問題。</p>
-<p>補:假如沒有去做更新改版的動作，可能會導致資料推送不完整或是push不上去的問題。</p>
-<ul>
-<li><span style="color: #ff0000;">出現H1空白標題</span></li>
-</ul>
-<p>去Source code更改，刪除空白頁 ，網頁卻出現錯誤</p>
-<p>解決方法:</p>
-<p><img alt="" height="243" src="./../images/explorer_2019-06-04_17-51-41.png" width="500"/></p>
-<p>1.前往隨身碟中該倉儲的config資料夾中</p>
-<p>2.分別有content.htm跟<span>content_backup.htm</span></p>
-<p><span>3.刪除content.htm</span></p>
-<p><span>4.再把content_backup.htm改成content.htm</span></p>
-<p>或者拉到文字編輯器中找尋錯誤的地方，更改後儲存(<span style="color: #339966;">建議先留一個備份)</span></p>
-<p><span>5.回去9443重整網頁即可</span></p>
-<ul>
-<li><span style="color: #ff0000;">出現兩個重複網頁</span><span style="color: #ff0000;"></span></li>
-</ul>
-<p>如下:<img alt="" height="301" src="./../images/chrome_2019-06-04_17-34-35.png" width="500"/></p>
-<p>原因是有兩個重複的H1，<span style="color: #339966;">改掉其中一個相同名稱的H1即可</span>。</p>
-<ul>
-<li>問題</li>
-</ul><br />VitualBox老師課程 << <a href='VitualBox老師課程.html'>Previous</a> </div>
+    <div id="tipue_search_content">學習解決倉儲合併衝突 << <a href='學習解決倉儲合併衝突.html'>Previous</a> <a href='升級倉儲中的 flaskapp py.html'>Next</a> >> 升級倉儲中的 flaskapp py<br /><h1>如何更改reveal投影片</h1>
+<p>    1.在workbook.leo裡打開reveal.ieo</p>
+<p>       <img alt="" height="193" src="https://mdecp2018.github.io/site-s40723102/images/chrome_2018-11-02_21-54-18.png" width="399"/></p>
+<p>    2.更改成任意字-&gt;(40723102)</p>
+<p><strong>       [CMSfly]後面括號內加網址</strong></p>
+<p>       <img alt="" height="197" src="https://mdecp2018.github.io/site-s40723102/images/chrome_2018-11-02_22-20-11.png" width="218"/><img alt="" height="197" src="https://mdecp2018.github.io/site-s40723102/images/chrome_2018-11-02_22-20-35.png" width="256"/></p>
+<p>    3.儲存save</p>
+<p>        <img alt="" height="422" src="https://mdecp2018.github.io/site-s40723102/images/chrome_2018-11-02_22-20-59.png" width="247"/></p>
+<p>     4.重整reveal網頁</p>
+<p>         <img alt="" height="189" src="https://mdecp2018.github.io/site-s40723102/images/chrome_2018-11-02_22-21-24.png" width="400"/></p>
+<p>   5.完成</p>
+<p><iframe allowfullscreen="allowfullscreen" data-mce-fragment="1" height="280" src="https://www.youtube.com/embed/ZDR23VlYHtE" width="500"></iframe></p>
+<br />學習解決倉儲合併衝突 << <a href='學習解決倉儲合併衝突.html'>Previous</a> <a href='升級倉儲中的 flaskapp py.html'>Next</a> >> 升級倉儲中的 flaskapp py</div>
         
     <!-- footer -->
       <div class="container">
